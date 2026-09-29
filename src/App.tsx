@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion, useScroll, useSpring } from 'motion/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
