@@ -1,23 +1,43 @@
-function App() {
+import { motion, useScroll, useSpring } from 'motion/react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Services from './components/Services';
+import Portfolio from './components/Portfolio';
+import InteractiveContact from './components/InteractiveContact';
+import Footer from './components/Footer';
+
+export default function App() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   return (
-    <main className="min-h-screen bg-cream text-charcoal">
-      <section className="flex min-h-screen items-center justify-center px-6">
-        <div className="text-center">
-          <p className="mb-4 text-sm uppercase tracking-[0.25em] text-burgundy">
-            Brilliance Konnect
-          </p>
+    <div className="relative min-h-screen bg-cream text-charcoal selection:bg-burgundy selection:text-cream flex flex-col justify-between" id="app-root-container">
+      {/* Top Scroll Progress Indicator */}
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-[3px] bg-burgundy z-50 origin-left"
+        style={{ scaleX }}
+        id="scroll-progress-indicator"
+      />
 
-          <h1 className="text-5xl font-bold md:text-7xl">
-            Tailwind is working
-          </h1>
+      {/* Floating Header Navbar */}
+      <Navbar />
 
-          <p className="mx-auto mt-6 max-w-xl text-lg text-charcoal-light">
-            React, TypeScript, Vite and Tailwind CSS are ready. We are so excited to start building our app!
-          </p>
-        </div>
-      </section>
-    </main>
-  )
+      {/* Main Sections */}
+      <main className="flex-grow">
+        <Hero />
+        <About />
+        <Services />
+        <Portfolio />
+        <InteractiveContact />
+      </main>
+
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
 }
-
-export default App
