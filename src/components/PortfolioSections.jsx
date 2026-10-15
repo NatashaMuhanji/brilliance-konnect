@@ -50,7 +50,7 @@ const projects = [
     title: 'Savannah Luxury Hospitality Launch',
     description: 'Complete brand identity design, high-profile press release orchestration, and private launch activation for an eco-luxury safari retreat.',
     category: 'Brand Strategy',
-    filters: ['Brand Strategy', 'Digital Design'],
+    filters: ['Brand strategy', 'Digital design'],
     location: 'Nairobi, KE',
     tone: 'savannah',
     code: 'BK / 024',
@@ -59,7 +59,7 @@ const projects = [
     title: 'Tech Innovators Annual Summit',
     description: 'Full-scale media briefing desk, speaker positioning, digital livestreams, and VIP reception for 400+ pan-African delegates.',
     category: 'Events & PR',
-    filters: ['Events & PR', 'Digital Design'],
+    filters: ['Events & PR', 'Digital design'],
     location: 'Westlands, Nairobi',
     tone: 'summit',
     code: 'BK / 031',
@@ -388,7 +388,7 @@ export function ContactSection() {
                 </label>
               </div>
               <label>Project details<textarea name="message" placeholder="A little about your goals, timing, or what success looks like..." rows="4" required minLength={12} /></label>
-              <input className="botcheck" type="checkbox" name="botcheck" tabIndex={-1} aria-hidden="true" />
+              <input className="botcheck" type="text" name="botcheck" tabIndex={-1} autoComplete="off" aria-hidden="true" />
               {state === 'error' && <p className="form-error" role="alert">{errorMessage} <a href="mailto:brilliancekonnect@outlook.com">Email us directly</a></p>}
               <button className="button button-primary form-submit" type="submit" disabled={state === 'sending'}>
                 {state === 'sending' ? <><span className="spinner" />Sending your message</> : <>Send your inquiry <Send size={15} /></>}
