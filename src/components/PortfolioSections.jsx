@@ -322,7 +322,7 @@ export function ContactSection() {
     setState('sending')
     setErrorMessage('')
 
-    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || '2c59140e-8688-4bc9-b58d-5f1134bbd751'
     if (!accessKey) {
       setState('error')
       setErrorMessage('The contact form is not configured yet. Please email us directly and we will be glad to help.')
