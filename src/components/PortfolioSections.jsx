@@ -98,6 +98,7 @@ export function Navbar() {
       <div className="header-inner page-width">
         <a className="brand-lockup" href="#home" aria-label="Brilliance Konnect home" onClick={() => setMenuOpen(false)}>
           <img src="/assets/BK-svg-logo.svg" alt="BK" />
+          <img src="/assets/BK-svg-name.svg" alt="Brilliance-Konnect" />
           <span>Brilliance <em>Konnect.</em></span>
           
         </a>
@@ -409,9 +410,9 @@ export function Footer() {
       <div className="page-width footer-inner">
         <div className="footer-main">
           <div className="footer-brand">
-            <a className="footer-wordmark" href="#home"><img style={{ color: '#ffffff' }} src="/assets/BK-svg-name.svg" alt="Brilliance-Konnect" />Brilliance <em>Ko</em>nnect.</a>
-            <p>Nairobi's stop for PR, media communications, and Connecting Brilliance With Your Audience.</p>
-            <span className="footer-address">Nairobi, Kenya</span>
+            <a className="footer-wordmark" href="#home">Brilliance <em>Konnect.</em></a>
+            <p>Nairobi's boutique PR, media communications, and digital strategy agency. We cultivate lasting market trust and premium presence.</p>
+            <span className="footer-address">Westlands Commercial Center, Nairobi, Kenya</span>
           </div>
           <div className="footer-column"><h3>Capabilities</h3><a href="#services">Brand management</a><a href="#services">Press & media</a><a href="#services">Event production</a><a href="#services">Digital platforms</a></div>
           <div className="footer-column"><h3>Company</h3><a href="#about">Our identity</a><a href="#about">Core pillars</a><a href="#work">Curated campaigns</a><a href="#contact">Get in touch</a></div>
