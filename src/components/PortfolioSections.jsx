@@ -134,7 +134,7 @@ export function Hero() {
           </Reveal>
           <Reveal delay={0.12}>
             <p className="hero-description">
-              We are <strong>Brilliance Konnect</strong>, a boutique PR and communications agency based in Nairobi. We build strong brand authority, high-impact campaigns, inclusive corporate events, and clean digital aesthetics.
+              We are <strong>Brilliance Konnect</strong>, a boutique PR and communications agency based in Nairobi. We build strong brand authority, high-impact campaigns, inclusive corporate events and clean digital aesthetics.
             </p>
           </Reveal>
           <Reveal delay={0.18}>
