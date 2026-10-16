@@ -414,7 +414,7 @@ export function Footer() {
         <div className="footer-main">
           <div className="footer-brand">
             <a className="footer-wordmark" href="#home">
-              <img style={{ width: '16rem' }} src="/assets/BK-name-svg-white .svg" alt="Brilliance-Konnect" />          
+              <img style={{ width: '16rem' }} src="/assets/BK-name-svg-white.svg" alt="Brilliance-Konnect" />          
             </a>
             <p>Nairobi's boutique PR, media communications, and digital strategy agency. We cultivate lasting market trust and premium presence.</p>
             <span className="footer-address">Westlands Commercial Center, Nairobi, Kenya</span>
