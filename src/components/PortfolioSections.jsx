@@ -4,8 +4,10 @@ import {
   ArrowDown,
   ArrowRight,
   ArrowUpRight,
+  Camera,
   Check,
   Menu,
+  Music2,
   Send,
   X,
 } from 'lucide-react'
@@ -97,10 +99,7 @@ export function Navbar() {
     <header className="site-header">
       <div className="header-inner page-width">
         <a className="brand-lockup" href="#home" aria-label="Brilliance Konnect home" onClick={() => setMenuOpen(false)}>
-          <img src="/assets/BK-svg-logo.svg" alt="BK" />
-          <img src="/assets/BK-svg-name.svg" alt="Brilliance-Konnect" />
-          <span>Brilliance <em>Konnect.</em></span>
-          
+          <img style={{ width: '16rem' }} src="/assets/BK-name-svg-black.svg" alt="Brilliance-Konnect" />          
         </a>
         <button
           className="menu-toggle"
@@ -358,6 +357,10 @@ export function ContactSection() {
           <h2>Good work begins<br />with a conversation.</h2>
           <p>Tell us what you are building, where you want to go, and how you would like to be remembered. We will take it from there.</p>
           <a className="contact-email" href="mailto:brilliancekonnect@outlook.com">brilliancekonnect@outlook.com <ArrowUpRight size={16} /></a>
+          <div className="contact-socials" aria-label="Social media">
+            <a href="https://www.instagram.com/brilliancekonnect?igsh=cWttY2xveG0ydTJ6" target="_blank" rel="noreferrer"><Camera size={15} />Instagram</a>
+            <a href="https://www.tiktok.com/@brilliancekonnect?_r=1&_t=ZS-98DJc0CYJnj" target="_blank" rel="noreferrer"><Music2 size={15} />TikTok</a>
+          </div>
           <div className="contact-note"><span className="availability-dot" />Currently welcoming select new partnerships</div>
         </Reveal>
         <Reveal className="contact-form-wrap" delay={0.12}>

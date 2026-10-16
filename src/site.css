@@ -131,6 +131,9 @@ h1,h2,h3,h4,p{margin-top:0}
 .contact-copy>p:not(.section-kicker){max-width:410px;margin:0;color:var(--body);font-size:13px;line-height:1.8}
 .contact-email{display:inline-flex;align-items:center;gap:9px;margin-top:28px;color:var(--wine);font-size:13px;font-weight:700;transition:gap 180ms ease}
 .contact-email:hover{gap:13px}
+.contact-socials{display:flex;flex-wrap:wrap;gap:18px;margin-top:20px}
+.contact-socials a{display:inline-flex;align-items:center;gap:7px;color:var(--muted);font-size:11px;transition:color 160ms ease}
+.contact-socials a:hover{color:var(--wine)}
 .contact-note{display:flex;align-items:center;gap:9px;margin-top:22px;color:var(--muted);font-size:10px}
 .availability-dot{width:6px;height:6px}
 .contact-form-wrap{min-width:0;padding:27px;border:1px solid #dfd3be;border-radius:8px;background:#f4ede0;box-shadow:0 12px 30px rgba(47,37,25,.045)}
