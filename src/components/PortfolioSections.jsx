@@ -99,7 +99,7 @@ export function Navbar() {
     <header className="site-header">
       <div className="header-inner page-width">
         <a className="brand-lockup" href="#home" aria-label="Brilliance Konnect home" onClick={() => setMenuOpen(false)}>
-          <img style={{ width: '16rem' }} src="/assets/BK-name-svg-black.svg" alt="Brilliance-Konnect" />          
+          <img src="/assets/BK-name-svg-black.svg" alt="Brilliance-Konnect" />          
         </a>
         <button
           className="menu-toggle"
@@ -413,7 +413,9 @@ export function Footer() {
       <div className="page-width footer-inner">
         <div className="footer-main">
           <div className="footer-brand">
-            <a className="footer-wordmark" href="#home">Brilliance <em>Konnect.</em></a>
+            <a className="footer-wordmark" href="#home">
+              <img style={{ width: '16rem' }} src="/assets/BK-name-svg-white .svg" alt="Brilliance-Konnect" />          
+            </a>
             <p>Nairobi's boutique PR, media communications, and digital strategy agency. We cultivate lasting market trust and premium presence.</p>
             <span className="footer-address">Westlands Commercial Center, Nairobi, Kenya</span>
           </div>
